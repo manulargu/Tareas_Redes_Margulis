@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Preguntas y referencias sobre protocolo HTTP</h1>
+    <hr>    
+    <h2>Sección de referencias de interes</h2>
+    <h3>Paginas interesantes sobre HTTP</h3>
+    <ul>
+        <li><a href="https://learn.microsoft.com/es-es/xandr/industry-reference/intro-to-http" target="_blank">Microsoft Learn - Introducción a HTTP</a></li>
+        <li><a href="https://www.freecodecamp.org/news/http-and-everything-you-need-to-know-about-it/" target="_blank">FreeCodeCamp -  Todo lo que necesitas saber sobre http</a></li>
+    </ul>
+    <hr>
+    <h2>Cuestionario sobre HTTP</h2>
+    
+    <p><strong>1- ¿Sobre qué protocolo binario está montado el protocolo HTTP?</strong></p>
+    <p>HTTP está montado sobre el protocolo binario TCP, lo usa para asegurar que las peticiones/respuestas lleguen bien.</p>
+    
+    <p><strong>2- ¿Cuáles son los clientes http y los servidores http más utilizados?</strong></p>
+    <p>Clientes HTTP más utilizados: Navegadores web (Chrome, Firefox, Edge, Safari, etc.), herramientas de línea de comando como curl o wget, y librerías nativas de distintos lenguajes (por ejemplo: fetch en JavaScript, requests en Python, http.client en Java, etc.)</p>
+    <p>Servidores HTTP más utilizados: Servidores web como Apache, Nginx, LiteSpeed, IIS (Microsoft) y servidores embebidos como Node.js con Express, Python con Flask o Django, Java con Spring Boot, etc.</p>
+    
+    <p><strong>3- ¿Qué verbos admite un comando en el requerimiento HTTP?</strong></p>
+    <p>Verbos HTTP principales: GET (obtener datos, lo más común), POST (enviar datos, crear algo en el servidor), PUT (reemplazar completamente un recurso), DELETE (eliminar un recurso), CONNECT (establece un túnel, por ejemplo para HTTPS).</p>
+    
+    <p><strong>4- ¿Qué contenido lleva el body de un requerimiento HTTP?</strong></p>
+    <p>Puede contener datos en cualquier formato: datos ingresados en campos de un formulario y files enviados en un proceso de upload.</p>
+    
+    <p><strong>5- ¿Qué diferencia existe entre un URL y un URI?</strong></p>
+    <p>Ejemplo URL: http://miempresa.midominio/mirecurso.html</p>
+    <p>URI (Uniform Resource Identifier): Es un identificador general de un recurso.</p>
+    <p>URL (Uniform Resource Locator): Es un tipo específico de URI que indica cómo acceder al recurso (tiene esquema como http, ftp, etc.)</p>
+    <p>Básicamente, una URL es un tipo de URI que indica cómo acceder al recurso identificado por el URI.</p>
+    
+    <p><strong>6- ¿Cómo se almacena información relacionada con las respuestas http?</strong></p>
+    <p>La respuesta HTTP incluye un status code, cabeceras con metadatos y un body con el contenido. Además, puede incluir cookies o instrucciones de caché.</p>
+    
+    <p><strong>7- ¿Qué significa HTTP sobre conexiones preexistentes?</strong></p>
+    <p>Significa que el protocolo HTTP puede reutilizar una conexión TCP ya abierta para hacer varios pedidos y respuestas, en lugar de abrir una nueva para cada uno.</p>
+    
+    <p><strong>8- ¿Qué significa Virtual hosting?</strong></p>
+    <p>Es una técnica que permite que un mismo servidor físico (una sola IP) albergue múltiples sitios web distintos. Name based: por nombre de dominio, IP based: por dirección IP, Port based: por puerto.</p>
+    
+    <p><strong>9- ¿Qué significa Cache por etag?</strong></p>
+    <p>Cache por ETag permite validar si un recurso web ha cambiado, usando una etiqueta única. Si no cambió, el servidor responde con 304, y se reutiliza el recurso cacheado.</p>
+    
+    <p><strong>10- ¿Por qué el HTTP se considera STATE LESS?</strong></p>
+    <p>Porque no guarda memoria de lo que pasó antes. Cada petición HTTP es independiente: el servidor no recuerda si ya hablaste con él antes, ni quién sos, ni qué hiciste.</p>
+    
+    <p><strong>11- ¿Qué nueva versión de HTTP se está usando para mejorar la velocidad de la WEB?</strong></p>
+    <p>HTTP/3 es la versión más nueva del protocolo HTTP. Usa QUIC sobre UDP para mejorar velocidad, seguridad y rendimiento en la web moderna.</p>
+    
+    <p><strong>12- ¿Cómo va a mejorar el comportamiento de una aplicación WEB en ambientes ruidosos o de débil conexión?</strong></p>
+    <p>HTTP/3 mejora el rendimiento en conexiones inestables gracias a QUIC, que permite reanudar conexiones rápidamente, evita bloqueos por paquetes perdidos y reduce la latencia general.</p>
+
+    <hr>
+    <h2>Imagenes Representativas HTTP</h2>   
+    <img src="Imagen1.png" alt="Diagrama del protocolo HTTP" width="500">
+    <img src="Imagen2.png" alt="Diagrama simple request response" width="500">
+
+    <hr>
+    <h2>Video Representativo HTTP</h2>
+    <iframe width="600" height="400" 
+            src="https://www.youtube.com/embed/70fwt29crLs?start=3" 
+            title="Video sobre HTTP" >
+    </iframe>
+    
+</body>
+</html>
+<hr>
+<h3>Datos del Alumno</h3>
+<p>Nombre: Manuel Margulis</p>
+<p>Mail: manuel.margulis@comunidad.ub.edu.ar</p>
