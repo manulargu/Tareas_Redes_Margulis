@@ -1,0 +1,23 @@
+.primero {
+    text-align: left;
+    margin: auto;
+    width: 60%;
+    background-color:aquamarine;
+}
+
+.segundo {
+    text-align: left;
+    margin: auto;
+    width: 60%;
+    background-color: lightcoral;
+    padding: 20px;
+}
+
+.tercero {
+    text-align: left;
+    margin: auto;
+    width: 60%;
+    background-color: lightblue;
+    padding: 30px;
+    box-sizing: border-box;
+}

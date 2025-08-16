@@ -1,0 +1,15 @@
+.estiloX {
+    width: 600px;
+    height: 300px;
+    overflow: auto;
+    background-image: url("imagen.jpg");
+    color: white;
+}
+
+.contenedor {
+    width: 80%;
+    height: 500px;
+    background-color: rgb(17, 56, 75);
+    padding: 10px;
+    box-sizing: border-box;
+}

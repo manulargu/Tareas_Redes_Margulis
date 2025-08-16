@@ -1,0 +1,19 @@
+.contenedor {
+    width: 80%;
+    height: 100%;
+    background-color: rgb(17, 56, 75);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.div1 {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.div2 {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.div3 {
+    background-color: rgba(0, 0, 255, 0.5);
+}

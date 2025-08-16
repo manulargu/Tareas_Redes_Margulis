@@ -1,0 +1,26 @@
+* {
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: pink;
+    font-style: initial;
+    border-style:solid;
+    border-color:rgb(101, 174, 199);
+}
+
+h2 {
+    text-align: left;
+    font-size: 2em;
+    color: rgb(101, 174, 199);
+    border-style:solid;
+    border-color: pink;
+    border-width: thin;
+}
+
+p {
+    font-size: 1.5em;
+    color: pink;
+}
