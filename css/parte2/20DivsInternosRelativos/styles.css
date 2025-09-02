@@ -1,0 +1,48 @@
+html, body {
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div {
+    margin-left: 15px;
+    margin-top: 20px;
+    float: left;
+    width: 18%;
+    height: 100px;
+}
+
+.uno {
+    background-color: red;
+    position: relative;
+}
+
+.dos {
+    background-color: blue;
+    position: relative;
+}
+
+.tres {
+    background-color: green;
+    position: relative;
+}
+
+.cuatro {
+    background-color: yellow;
+    position: relative;
+}
+
+.cinco {
+    background-color: purple;
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+    width: 50%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.467);
+    top: 20%;
+    left: 22%;
+    color:white;
+}
