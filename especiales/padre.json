@@ -1,0 +1,114 @@
+{
+  "ordenesCompra": [
+    {
+      "idRenglon": "R001",
+      "fecha": "2025-09-13",
+      "codigoProducto": "P001",
+      "descripcion": "Yerba Mate",
+      "cantidad": 2,
+      "unidadMedida": "U1",
+      "precioUnitario": 1500.00,
+      "importeRenglon": 3000.00,
+      "pdfComprobante": "comprobante001.pdf"
+    },
+    {
+      "idRenglon": "R002",
+      "fecha": "2025-09-13",
+      "codigoProducto": "P002",
+      "descripcion": "Coca Cola",
+      "cantidad": 5,
+      "unidadMedida": "U5",
+      "precioUnitario": 1200.00,
+      "importeRenglon": 6000.00,
+      "pdfComprobante": "comprobante002.pdf"
+    },
+    {
+      "idRenglon": "R003",
+      "fecha": "2025-09-14",
+      "codigoProducto": "P003",
+      "descripcion": "Leche Entera",
+      "cantidad": 5,
+      "unidadMedida": "U5",
+      "precioUnitario": 900.00,
+      "importeRenglon": 4500.00,
+      "pdfComprobante": "comprobante003.pdf"
+    },
+    {
+      "idRenglon": "R004",
+      "fecha": "2025-09-14",
+      "codigoProducto": "P004",
+      "descripcion": "Atun",
+      "cantidad": 2,
+      "unidadMedida": "U3",
+      "precioUnitario": 1100.00,
+      "importeRenglon": 2200.00,
+      "pdfComprobante": "comprobante004.pdf"
+    },
+    {
+      "idRenglon": "R005",
+      "fecha": "2025-09-15",
+      "codigoProducto": "P005",
+      "descripcion": "Huevos Docena",
+      "cantidad": 1,
+      "unidadMedida": "U4",
+      "precioUnitario": 2000.00,
+      "importeRenglon": 2000.00,
+      "pdfComprobante": "comprobante005.pdf"
+    },
+    {
+      "idRenglon": "R006",
+      "fecha": "2025-09-15",
+      "codigoProducto": "P006",
+      "descripcion": "Aceite Girasol",
+      "cantidad": 1,
+      "unidadMedida": "U5",
+      "precioUnitario": 1850.75,
+      "importeRenglon": 1850.75,
+      "pdfComprobante": "comprobante006.pdf"
+    },
+    {
+      "idRenglon": "R007",
+      "fecha": "2025-09-16",
+      "codigoProducto": "P007",
+      "descripcion": "Arroz Largo Fino",
+      "cantidad": 6,
+      "unidadMedida": "U1",
+      "precioUnitario": 750.00,
+      "importeRenglon": 4500.00,
+      "pdfComprobante": "comprobante007.pdf"
+    },
+    {
+      "idRenglon": "R008",
+      "fecha": "2025-09-16",
+      "codigoProducto": "P008",
+      "descripcion": "Azúcar",
+      "cantidad": 2,
+      "unidadMedida": "U1",
+      "precioUnitario": 850.00,
+      "importeRenglon": 1700.00,
+      "pdfComprobante": "comprobante008.pdf"
+    },
+    {
+      "idRenglon": "R009",
+      "fecha": "2025-09-17",
+      "codigoProducto": "P009",
+      "descripcion": "Fideos Tallarín",
+      "cantidad": 5,
+      "unidadMedida": "U1",
+      "precioUnitario": 680.50,
+      "importeRenglon": 3402.50,
+      "pdfComprobante": "comprobante009.pdf"
+    },
+    {
+      "idRenglon": "R010",
+      "fecha": "2025-09-17",
+      "codigoProducto": "P010",
+      "descripcion": "Jugo Cepita",
+      "cantidad": 7,
+      "unidadMedida": "U4",
+      "precioUnitario": 500.00,
+      "importeRenglon": 3500.00,
+      "pdfComprobante": "comprobante010.pdf"
+    }
+  ]
+}
