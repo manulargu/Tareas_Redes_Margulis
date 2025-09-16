@@ -1,0 +1,9 @@
+{
+  "unidades": [
+    {"codUnidad": "U1", "descripcion": "Kg"},
+    {"codUnidad": "U2", "descripcion": "Unidad"},
+    {"codUnidad": "U3", "descripcion": "Lata"},
+    {"codUnidad": "U4", "descripcion": "Caja"},
+    {"codUnidad": "U5", "descripcion": "Litro"}
+  ]
+}

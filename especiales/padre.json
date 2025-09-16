@@ -1,0 +1,114 @@
+{
+  "ordenesCompra": [
+    {
+      "idRenglon": "R001",
+      "fecha": "2025-09-13",
+      "codigoProducto": "P001",
+      "descripcion": "Yerba Mate 1kg",
+      "cantidad": 10,
+      "unidadMedida": "U1",
+      "precioUnitario": 1500.00,
+      "importeRenglon": 15000.00,
+      "pdfComprobante": "comprobante001.pdf"
+    },
+    {
+      "idRenglon": "R002",
+      "fecha": "2025-09-13",
+      "codigoProducto": "P002",
+      "descripcion": "Coca Cola 2L",
+      "cantidad": 5,
+      "unidadMedida": "U5",
+      "precioUnitario": 1200.00,
+      "importeRenglon": 6000.00,
+      "pdfComprobante": "comprobante002.pdf"
+    },
+    {
+      "idRenglon": "R003",
+      "fecha": "2025-09-14",
+      "codigoProducto": "P003",
+      "descripcion": "Leche Entera 1L",
+      "cantidad": 20,
+      "unidadMedida": "U5",
+      "precioUnitario": 900.50,
+      "importeRenglon": 18010.00,
+      "pdfComprobante": "comprobante003.pdf"
+    },
+    {
+      "idRenglon": "R004",
+      "fecha": "2025-09-14",
+      "codigoProducto": "P004",
+      "descripcion": "Pan Lactal",
+      "cantidad": 2,
+      "unidadMedida": "U2",
+      "precioUnitario": 1100.00,
+      "importeRenglon": 2200.00,
+      "pdfComprobante": "comprobante004.pdf"
+    },
+    {
+      "idRenglon": "R005",
+      "fecha": "2025-09-15",
+      "codigoProducto": "P005",
+      "descripcion": "Huevos Docena",
+      "cantidad": 15,
+      "unidadMedida": "U4",
+      "precioUnitario": 2000.00,
+      "importeRenglon": 30000.00,
+      "pdfComprobante": "comprobante005.pdf"
+    },
+    {
+      "idRenglon": "R006",
+      "fecha": "2025-09-15",
+      "codigoProducto": "P006",
+      "descripcion": "Aceite Girasol 900ml",
+      "cantidad": 8,
+      "unidadMedida": "U5",
+      "precioUnitario": 1850.75,
+      "importeRenglon": 14806.00,
+      "pdfComprobante": "comprobante006.pdf"
+    },
+    {
+      "idRenglon": "R007",
+      "fecha": "2025-09-16",
+      "codigoProducto": "P007",
+      "descripcion": "Arroz Largo Fino 500g",
+      "cantidad": 30,
+      "unidadMedida": "U1",
+      "precioUnitario": 750.00,
+      "importeRenglon": 22500.00,
+      "pdfComprobante": "comprobante007.pdf"
+    },
+    {
+      "idRenglon": "R008",
+      "fecha": "2025-09-16",
+      "codigoProducto": "P008",
+      "descripcion": "Azúcar 1kg",
+      "cantidad": 12,
+      "unidadMedida": "U1",
+      "precioUnitario": 850.00,
+      "importeRenglon": 10200.00,
+      "pdfComprobante": "comprobante008.pdf"
+    },
+    {
+      "idRenglon": "R009",
+      "fecha": "2025-09-17",
+      "codigoProducto": "P009",
+      "descripcion": "Fideos Tallarín 500g",
+      "cantidad": 25,
+      "unidadMedida": "U1",
+      "precioUnitario": 680.50,
+      "importeRenglon": 17012.50,
+      "pdfComprobante": "comprobante009.pdf"
+    },
+    {
+      "idRenglon": "R010",
+      "fecha": "2025-09-17",
+      "codigoProducto": "P010",
+      "descripcion": "Carne Picada",
+      "cantidad": 7,
+      "unidadMedida": "U2",
+      "precioUnitario": 3500.00,
+      "importeRenglon": 24500.00,
+      "pdfComprobante": "comprobante010.pdf"
+    }
+  ]
+}
