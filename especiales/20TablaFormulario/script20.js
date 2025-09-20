@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var claves = [];
     $('#cargar').prop('disabled', true); // Deshabilita el botón hasta que se cargue el JSON
-    $.getJSON('../padre.json', function(data) {
+    $.getJSON('padre.json', function(data) {
         if (!data.ordenesCompra || !data.ordenesCompra.length) return;
         claves = Object.keys(data.ordenesCompra[0]).filter(function(k){ return k !== 'pdfComprobante'; });
         var ths = claves.map(function(k){
@@ -27,7 +27,7 @@ $(document).ready(function() {
     });
 
     function cargarDatos() {
-    $.getJSON('../padre.json', function(data) {
+    $.getJSON('padre.json', function(data) {
             if (!data.ordenesCompra || !data.ordenesCompra.length) return;
             var filas = '';
             data.ordenesCompra.forEach(function(item) {
@@ -56,7 +56,7 @@ $(document).ready(function() {
         $('#contenedor').css({'opacity':1,'pointer-events':'auto'});
     });
 
-    $.getJSON('../hijo.json', function(data) {
+    $.getJSON('hijo.json', function(data) {
         var $select = $('#unidadMedida');
         $select.empty();
         data.unidades.forEach(function(unidad) {
