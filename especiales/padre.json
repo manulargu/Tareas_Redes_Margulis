@@ -101,14 +101,124 @@
     },
     {
       "idRenglon": "R010",
-      "fecha": "2025-09-17",
+      "fecha": "2025-09-18",
       "codigoProducto": "P010",
-      "descripcion": "Jugo Cepita",
-      "cantidad": 7,
-      "unidadMedida": "U4",
-      "precioUnitario": 500.00,
-      "importeRenglon": 3500.00,
+      "descripcion": "Pan de Molde",
+      "cantidad": 2,
+      "unidadMedida": "U2",
+      "precioUnitario": 950.00,
+      "importeRenglon": 1900.00,
       "pdfComprobante": "comprobante010.pdf"
+    },
+    {
+      "idRenglon": "R011",
+      "fecha": "2025-09-18",
+      "codigoProducto": "P011",
+      "descripcion": "Leche Descremada",
+      "cantidad": 3,
+      "unidadMedida": "U5",
+      "precioUnitario": 920.00,
+      "importeRenglon": 2760.00,
+      "pdfComprobante": "comprobante011.pdf"
+    },
+    {
+      "idRenglon": "R012",
+      "fecha": "2025-09-19",
+      "codigoProducto": "P012",
+      "descripcion": "Galletitas Dulces",
+      "cantidad": 4,
+      "unidadMedida": "U2",
+      "precioUnitario": 600.00,
+      "importeRenglon": 2400.00,
+      "pdfComprobante": "comprobante012.pdf"
+    },
+    {
+      "idRenglon": "R013",
+      "fecha": "2025-09-19",
+      "codigoProducto": "P013",
+      "descripcion": "Jugo de Naranja",
+      "cantidad": 2,
+      "unidadMedida": "U5",
+      "precioUnitario": 850.00,
+      "importeRenglon": 1700.00,
+      "pdfComprobante": "comprobante013.pdf"
+    },
+    {
+      "idRenglon": "R014",
+      "fecha": "2025-09-19",
+      "codigoProducto": "P014",
+      "descripcion": "Tomate en Lata",
+      "cantidad": 3,
+      "unidadMedida": "U3",
+      "precioUnitario": 700.00,
+      "importeRenglon": 2100.00,
+      "pdfComprobante": "comprobante014.pdf"
+    },
+    {
+      "idRenglon": "R015",
+      "fecha": "2025-09-20",
+      "codigoProducto": "P015",
+      "descripcion": "Queso Cremoso",
+      "cantidad": 1,
+      "unidadMedida": "U1",
+      "precioUnitario": 3200.00,
+      "importeRenglon": 3200.00,
+      "pdfComprobante": "comprobante015.pdf"
+    },
+    {
+      "idRenglon": "R016",
+      "fecha": "2025-09-20",
+      "codigoProducto": "P016",
+      "descripcion": "Caja de Té",
+      "cantidad": 2,
+      "unidadMedida": "U4",
+      "precioUnitario": 1100.00,
+      "importeRenglon": 2200.00,
+      "pdfComprobante": "comprobante016.pdf"
+    },
+    {
+      "idRenglon": "R017",
+      "fecha": "2025-09-20",
+      "codigoProducto": "P017",
+      "descripcion": "Aceitunas Verdes",
+      "cantidad": 2,
+      "unidadMedida": "U3",
+      "precioUnitario": 1300.00,
+      "importeRenglon": 2600.00,
+      "pdfComprobante": "comprobante017.pdf"
+    },
+    {
+      "idRenglon": "R018",
+      "fecha": "2025-09-21",
+      "codigoProducto": "P018",
+      "descripcion": "Botella de Agua",
+      "cantidad": 6,
+      "unidadMedida": "U5",
+      "precioUnitario": 400.00,
+      "importeRenglon": 2400.00,
+      "pdfComprobante": "comprobante018.pdf"
+    },
+    {
+      "idRenglon": "R019",
+      "fecha": "2025-09-21",
+      "codigoProducto": "P019",
+      "descripcion": "Caja de Galletas",
+      "cantidad": 1,
+      "unidadMedida": "U4",
+      "precioUnitario": 2500.00,
+      "importeRenglon": 2500.00,
+      "pdfComprobante": "comprobante019.pdf"
+    },
+    {
+      "idRenglon": "R020",
+      "fecha": "2025-09-21",
+      "codigoProducto": "P020",
+      "descripcion": "Arvejas en Lata",
+      "cantidad": 2,
+      "unidadMedida": "U3",
+      "precioUnitario": 750.00,
+      "importeRenglon": 1500.00,
+      "pdfComprobante": "comprobante020.pdf"
     }
   ]
 }
