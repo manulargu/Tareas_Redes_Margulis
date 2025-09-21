@@ -25,7 +25,6 @@ $(document).ready(function() {
             }
         });
         $('.grilla').html(campos);
-        // Cargar opciones del select de unidadMedida cada vez que se arma el formulario
         $.getJSON('/Tareas_Redes_Margulis/especiales/hijo.json', function(data) {
             var $select = $('#unidadMedida');
             $select.empty();
@@ -87,7 +86,6 @@ $(document).ready(function() {
         $(this).serializeArray().forEach(function(campo) {
             nuevo[campo.name] = campo.value;
         });
-        // Asegura que importeRenglon esté calculado
         if (!nuevo.importeRenglon || isNaN(parseFloat(nuevo.importeRenglon))) {
             var cantidad = parseFloat(nuevo.cantidad);
             var precio = parseFloat(nuevo.precioUnitario);
@@ -98,7 +96,6 @@ $(document).ready(function() {
             }
         }
         filasExtra.push(nuevo);
-        // Agrega la fila directamente a la tabla sin recargar datos
         var fila = '<tr>' + claves.map(function(k){ return '<td>' + (nuevo[k] || '') + '</td>'; }).join('') + '</tr>';
         $('#tablaArticulos tbody').append(fila);
         $('#modalBg').hide();
