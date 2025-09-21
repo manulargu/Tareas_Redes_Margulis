@@ -25,6 +25,14 @@ $(document).ready(function() {
             }
         });
         $('.grilla').html(campos);
+        // Cargar opciones del select de unidadMedida cada vez que se arma el formulario
+        $.getJSON('/Tareas_Redes_Margulis/especiales/hijo.json', function(data) {
+            var $select = $('#unidadMedida');
+            $select.empty();
+            data.unidades.forEach(function(unidad) {
+                $select.append('<option value="' + unidad.codUnidad + '">' + unidad.codUnidad + ' (' + unidad.descripcion + ')</option>');
+            });
+        });
         $('#cargar').prop('disabled', false);
     });
     var filasExtra = [];
@@ -63,16 +71,6 @@ $(document).ready(function() {
         $('#modal').hide();
         $('#contenedor').css({'opacity':1,'pointer-events':'auto'});
     });
-
-    $.getJSON('/Tareas_Redes_Margulis/especiales/hijo.json', function(data) {
-        var $select = $('#unidadMedida');
-        $select.empty();
-        data.unidades.forEach(function(unidad) {
-            $select.append('<option value="' + unidad.codUnidad + '">' + unidad.codUnidad + ' (' + unidad.descripcion + ')</option>');
-        });
-    });
-
-    // Calcula Importe Renglón automáticamente al cambiar cantidad o precio
     $(document).on('input', 'input[name="cantidad"], input[name="precioUnitario"]', function() {
         var cantidad = parseFloat($('input[name="cantidad"]').val());
         var precio = parseFloat($('input[name="precioUnitario"]').val());
