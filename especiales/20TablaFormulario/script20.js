@@ -73,11 +73,17 @@ $(document).ready(function() {
 
     $('#form05').on('submit', function(e) {
         e.preventDefault();
-        // Obtiene los datos del formulario como objeto
         var nuevo = {};
         $(this).serializeArray().forEach(function(campo) {
             nuevo[campo.name] = campo.value;
         });
+        if (nuevo.cantidad && nuevo.precioUnitario) {
+            var cantidad = parseFloat(nuevo.cantidad);
+            var precio = parseFloat(nuevo.precioUnitario);
+            if (!isNaN(cantidad) && !isNaN(precio)) {
+                nuevo.importeRenglon = (cantidad * precio).toFixed(2);
+            }
+        }
         filasExtra.push(nuevo);
         cargarDatos();
         $('#modalBg').hide();
