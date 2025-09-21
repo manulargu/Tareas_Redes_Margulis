@@ -16,8 +16,10 @@ $(document).ready(function() {
                 campos += '<div><label>' + label + ':</label><select name="unidadMedida" id="unidadMedida" required></select></div>';
             } else if (k === 'fecha') {
                 campos += '<div><label>' + label + ':</label><input type="date" name="' + k + '" required></div>';
-            } else if (k === 'cantidad' || k === 'precioUnitario' || k === 'importeRenglon') {
+            } else if (k === 'cantidad' || k === 'precioUnitario') {
                 campos += '<div><label>' + label + ':</label><input type="number" step="0.01" name="' + k + '" required></div>';
+            } else if (k === 'importeRenglon') {
+                campos += '<div><label>' + label + ':</label><input type="number" step="0.01" name="' + k + '" id="importeRenglon" readonly></div>';
             } else {
                 campos += '<div><label>' + label + ':</label><input name="' + k + '" required></div>';
             }
@@ -35,7 +37,6 @@ $(document).ready(function() {
                     claves.map(function(k){ return '<td>' + (item[k] || '') + '</td>'; }).join('') +
                 '</tr>';
             });
-            // Agrega las filas extra ingresadas por el usuario
             filasExtra.forEach(function(item) {
                 filas += '<tr>' +
                     claves.map(function(k){ return '<td>' + (item[k] || '') + '</td>'; }).join('') +
@@ -71,23 +72,41 @@ $(document).ready(function() {
         });
     });
 
+    // Calcula Importe Renglón automáticamente al cambiar cantidad o precio
+    $(document).on('input', 'input[name="cantidad"], input[name="precioUnitario"]', function() {
+        var cantidad = parseFloat($('input[name="cantidad"]').val());
+        var precio = parseFloat($('input[name="precioUnitario"]').val());
+        if (!isNaN(cantidad) && !isNaN(precio)) {
+            $('#importeRenglon').val((cantidad * precio).toFixed(2));
+        } else {
+            $('#importeRenglon').val('');
+        }
+    });
+
     $('#form05').on('submit', function(e) {
         e.preventDefault();
         var nuevo = {};
         $(this).serializeArray().forEach(function(campo) {
             nuevo[campo.name] = campo.value;
         });
-        if (nuevo.cantidad && nuevo.precioUnitario) {
+        // Asegura que importeRenglon esté calculado
+        if (!nuevo.importeRenglon || isNaN(parseFloat(nuevo.importeRenglon))) {
             var cantidad = parseFloat(nuevo.cantidad);
             var precio = parseFloat(nuevo.precioUnitario);
             if (!isNaN(cantidad) && !isNaN(precio)) {
                 nuevo.importeRenglon = (cantidad * precio).toFixed(2);
+            } else {
+                nuevo.importeRenglon = '';
             }
         }
         filasExtra.push(nuevo);
-        cargarDatos();
+        // Agrega la fila directamente a la tabla sin recargar datos
+        var fila = '<tr>' + claves.map(function(k){ return '<td>' + (nuevo[k] || '') + '</td>'; }).join('') + '</tr>';
+        $('#tablaArticulos tbody').append(fila);
         $('#modalBg').hide();
         $('#modal').hide();
         $('#contenedor').css({'opacity':1,'pointer-events':'auto'});
+        this.reset();
+        $('#importeRenglon').val('');
     });
 });
