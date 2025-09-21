@@ -1,16 +1,7 @@
 $(document).ready(function() {
-    var claves = [];
-    $('#cargar').prop('disabled', true);
-    $.getJSON('/Tareas_Redes_Margulis/especiales/padre.json', function(data) {
-        if (!data.ordenesCompra || !data.ordenesCompra.length) return;
-        claves = Object.keys(data.ordenesCompra[0]).filter(function(k){ return k !== 'pdfComprobante'; });
-        var ths = claves.map(function(k){
-            return '<th>' + k.replace(/([A-Z])/g, ' $1').replace(/^./, function(s){ return s.toUpperCase(); }).replace('Id Renglon','ID Renglón').replace('Codigo Producto','Código Producto').replace('Unidad Medida','Unidad Medida').replace('Precio Unitario','Precio Unitario').replace('Importe Renglon','Importe Renglón') + '</th>';
-        }).join('');
-        $('#tablaArticulos thead').html('<tr>' + ths + '</tr>');
-        $('#cargar').prop('disabled', false);
-    });
-
+    var claves = [
+        'idRenglon', 'fecha', 'codigoProducto', 'descripcion', 'cantidad', 'unidadMedida', 'precioUnitario', 'importeRenglon'
+    ];
     function cargarDatos() {
         $.getJSON('/Tareas_Redes_Margulis/especiales/padre.json', function(data) {
             if (!data.ordenesCompra || !data.ordenesCompra.length) return;
