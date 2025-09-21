@@ -25,12 +25,18 @@ $(document).ready(function() {
         $('.grilla').html(campos);
         $('#cargar').prop('disabled', false);
     });
-
+    var filasExtra = [];
     function cargarDatos() {
         $.getJSON('/Tareas_Redes_Margulis/especiales/padre.json', function(data) {
             if (!data.ordenesCompra || !data.ordenesCompra.length) return;
             var filas = '';
             data.ordenesCompra.forEach(function(item) {
+                filas += '<tr>' +
+                    claves.map(function(k){ return '<td>' + (item[k] || '') + '</td>'; }).join('') +
+                '</tr>';
+            });
+            // Agrega las filas extra ingresadas por el usuario
+            filasExtra.forEach(function(item) {
                 filas += '<tr>' +
                     claves.map(function(k){ return '<td>' + (item[k] || '') + '</td>'; }).join('') +
                 '</tr>';
@@ -43,6 +49,7 @@ $(document).ready(function() {
     });
     $('#vaciar').click(function() {
         $('#tablaArticulos tbody').empty();
+        filasExtra = [];
     });
 
     $('#abrirModal').click(function() {
@@ -66,7 +73,13 @@ $(document).ready(function() {
 
     $('#form05').on('submit', function(e) {
         e.preventDefault();
-        alert('Formulario enviado (simulado).');
+        // Obtiene los datos del formulario como objeto
+        var nuevo = {};
+        $(this).serializeArray().forEach(function(campo) {
+            nuevo[campo.name] = campo.value;
+        });
+        filasExtra.push(nuevo);
+        cargarDatos();
         $('#modalBg').hide();
         $('#modal').hide();
         $('#contenedor').css({'opacity':1,'pointer-events':'auto'});
