@@ -18,7 +18,18 @@
     </div>
     <div class="tabla-zona" id="contenedor">
         <table id="tablaArticulos">
-            <thead></thead>
+            <thead>
+                <tr>
+                    <th>ID Renglón</th>
+                    <th>Fecha</th>
+                    <th>Código Producto</th>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
+                    <th>Unidad de Medida</th>
+                    <th>Precio Unitario</th>
+                    <th>Importe Renglón</th>
+                </tr>
+            </thead>
             <tbody>
             </tbody>
         </table>
@@ -28,7 +39,16 @@
         <button class="cerrar" id="cerrarModal">&times;</button>
         <div class="titulo">Ordenes Compra</div>
         <form id="form05">
-            <div class="grilla"></div>
+            <div class="grilla">
+                <div><label>ID Renglón:</label><input name="idRenglon" required></div>
+                <div><label>Fecha:</label><input type="date" name="fecha" required></div>
+                <div><label>Código Producto:</label><input name="codigoProducto" required></div>
+                <div><label>Descripción:</label><input name="descripcion" required></div>
+                <div><label>Cantidad:</label><input type="number" step="0.01" name="cantidad" required></div>
+                <div><label>Unidad de Medida:</label><select name="unidadMedida" id="unidadMedida" required></select></div>
+                <div><label>Precio Unitario:</label><input type="number" step="0.01" name="precioUnitario" required></div>
+                <div><label>Importe Renglón:</label><input type="number" step="0.01" name="importeRenglon" id="importeRenglon" readonly></div>
+            </div>
             <div class="acciones">
                 <button type="submit">ENVIAR</button>
             </div>
